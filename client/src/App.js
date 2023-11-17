@@ -20,7 +20,7 @@ function App() {
   };
   //Fetching stock prices from the mock API every minute
   useEffect(() => {
-    const intervalId = setInterval(fetchData, 10000); // Fetch every minute
+    const intervalId = setInterval(fetchData, 60000); // Fetch every minute
     return () => clearInterval(intervalId);
   }, []);
 
